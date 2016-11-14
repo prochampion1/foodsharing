@@ -4,12 +4,13 @@ Submitted by: Group#2
 
 Time spent: ??? hours spent in total
 
-URL: https://csfoodsharing.herokuapp.com
+URL: https://csrecipe.herokuapp.com
 
 ## User Stories
 
 Anonymous user can
 * [ ] Watch recipe with video.
+* [ ] View recipe detail page.
 * [ ] Watch realtime comment of video.
 * [ ] See recipe market place.
 * [ ] Register to become a member.

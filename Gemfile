@@ -3,16 +3,15 @@ source 'https://rubygems.org'
 gem 'bootstrap', '~> 4.0.0.alpha5'
 gem 'pg', '~> 0.18.4'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
-
+gem 'owlcarousel-rails'
 gem 'carrierwave'
 gem 'cloudinary'
-
+gem "font-awesome-rails"
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
@@ -25,17 +24,25 @@ gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
 gem 'google-api-client', '~> 0.7.1'
 
-
 group :development, :test do
+  gem 'simplecov'
+  gem 'factory_girl'
+  gem 'rspec-rails', '~> 3.5'
   gem 'byebug', platform: :mri
   gem 'pry'
 end
 
 group :development do
+  gem 'rails-erd'
   gem 'web-console'
   gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+end
+
+group :test do
+  gem 'simplecov', require: false
+  gem 'shoulda-matchers', '~> 3.1'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
@@ -47,3 +54,11 @@ end
 
 gem 'city-state'
 gem 'slim'
+gem 'annotate'
+gem 'faker'
+gem 'social-share-button'
+gem 'acts_as_commentable'
+gem 'acts_as_votable', '~> 0.10.0'
+gem 'kaminari'
+gem 'cancancan', '~> 1.10'
+gem 'rails_12factor', group: :production
